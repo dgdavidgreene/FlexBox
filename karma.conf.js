@@ -15,17 +15,24 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-		'scripts/angular/angular.js',
+
+		'www/lib/ionic/js/angular/angular.js',
 		'node_modules/angular-mocks/angular-mocks.js',
-		'scripts/angular-animate/angular-animate.js',
-		'scripts/angular-sanitize/angular-sanitize.js',
-		'scripts/angular-ui-router/release/angular-ui-router.js',
+		'node_modules/angular-mocks/angular-mocks.js',
+		'www/lib/ionic/js/angular/angular-animate.js',
+		'www/lib/ionic/js/angular/angular-sanitize.js',
+		'www/lib/ionic/js/angular-ui/angular-ui-router.js',
+
 		// The above is to replace 'www/lib/ionic/js/ionic.bundle.js',
 		'www/lib/ionic/js/ionic.js',
 		'www/lib/ionic/js/ionic-angular.js',
 		'www/lib/ionic-material/dist/ionic.material.js',
 		'www/lib/ion-md-input/js/ion-md-input.js',
 		//'www/lib/waves/dist/waves.js',
+		'www/lib/angular-cookies/angular-cookies.js',
+		'www/lib/angular-resource/angular-resource.js',
+		'www/lib/angular-local-storage/dist/angular-local-storage.js',
+		'www/lib/backand/backand.1.7.2.min.js',
 		'www/js/app/app.js',
 		//'www/js/app/services/services.module.js',
 		
