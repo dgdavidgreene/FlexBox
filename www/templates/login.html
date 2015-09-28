@@ -3,16 +3,37 @@
         <div class="hero no-header flat">
             <div class="content">
                 <div class="app-icon"></div>
-                <h1>Thronester</h1>
+                <h1>Polistics</h1>
             </div>
         </div>
-        <div class="list">
-            <ion-md-input placeholder="Username" highlight-color="balanced" type="text"></ion-md-input>
-            <ion-md-input placeholder="Password" highlight-color="energized" type="password"></ion-md-input>
-        </div>
-        <div class="padding">
-            <button ui-sref="app.profile" class="button button-full button-assertive ink">Login</button>
-        </div>
+		<form class="form" name="form" ng-submit="vm.signIn()" >
+
+				<div class="list">
+					<ion-md-input 
+						placeholder="Email" 
+						highlight-color="balanced" 
+						type="email"
+						ng-model = "vm.username"
+						ng-model-options="{debounce: 200}"
+						required
+					>
+						<div class="text-danger" ng-show="form.username.$error.email">This is not a valid email.</div>
+					</ion-md-input>
+					<ion-md-input 
+						placeholder="Password" 
+						highlight-color="energized" 
+						type="password"
+						ng-model = "vm.password"
+					></ion-md-input>
+				</div>
+				<div class="padding">
+					<div class="form-group">
+						<button  type="submit" class="button button-full button-assertive ink">Login</button>
+					</div>
+				</div>
+				<div ng-show="error" class="alert alert-danger">{{vm.error}}</div>				
+        </form>		
+
         <div class="button-bar social-login">
             <button class="button button-small button-border icon-left ion-social-google button-assertive-900">Google+</button>
             <button class="button button-small button-border icon-left ion-social-twitter button-calm-900">Twitter</button>

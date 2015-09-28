@@ -28,11 +28,7 @@ module.exports = function(config) {
 		'www/lib/ionic/js/angular/angular-local-storage.js',
 		'www/lib/backand/backand.1.7.2.min.js',
 		'www/js/app/app.js',
-		//'www/js/app/services/services.module.js',
 		
-		
-		
-		//'www/js/app/app.spec.js'
 		'www/js/app/**/*.js'
 
 

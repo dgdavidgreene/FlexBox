@@ -8,7 +8,8 @@
 // 'ionic-polistics.controllers' is found in controllers.js
 angular.module('ionic-polistics', [
 	'ionic' 
-	,'ionic-polistics.controllers'
+	//,'ionic-polistics.controllers'
+	,'ionic-polistics.interceptors'
 	,'ionic-material'
 	,'ionMdInput'
 	,'ngCookies'

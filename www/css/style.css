@@ -77,3 +77,11 @@ p {
     position: fixed;
     bottom: 0;
 }
+
+.highlight-calm {
+    width: 98%;
+}
+
+.item-input input, .item-input textarea {
+    width: 98%;
+}

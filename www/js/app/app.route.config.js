@@ -3,11 +3,13 @@
 
 angular.module('ionic-polistics')
 	.config(appRouterConfig);
-	appRouterConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
+	appRouterConfig.$inject = ['$stateProvider', '$urlRouterProvider', '$httpProvider'];
 	
 
-	function appRouterConfig($stateProvider, $urlRouterProvider) {
+	function appRouterConfig($stateProvider, $urlRouterProvider, $httpProvider) {
 
+	    $httpProvider.interceptors.push('httpSecurityInterceptor');
+		
 		// Use $stateProvider to configure your states.
 	    $stateProvider
 
