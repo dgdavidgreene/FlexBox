@@ -82,7 +82,7 @@ angular.module('ionic-polistics')
 				views: {
 					'menuContent': {
 						templateUrl: 'templates/login.html',
-						controller: 'LoginCtrl'
+						controller: 'LoginCtrl as loginController'
 					},
 					'fabContent': {
 						template: ''
