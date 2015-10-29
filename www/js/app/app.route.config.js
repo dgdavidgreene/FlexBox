@@ -20,7 +20,7 @@ angular.module('ionic-polistics')
 				url: '/app',
 				abstract: true,
 				templateUrl: 'templates/menu.html',
-				controller: 'AppCtrl'
+				controller: 'AppCtrl as app'
 			})
 
 			.state('app.activity', {
@@ -100,9 +100,9 @@ angular.module('ionic-polistics')
 					'fabContent': {
 						template: '<button id="fab-profile" class="button button-fab button-fab-bottom-right button-energized-900"><i class="icon ion-plus"></i></button>',
 						controller: function ($timeout) {
-							/*$timeout(function () {
+							$timeout(function () {
 								document.getElementById('fab-profile').classList.toggle('on');
-							}, 800);*/ 
+							}, 800);
 						}
 					}
 				}

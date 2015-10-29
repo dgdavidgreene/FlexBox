@@ -1,4 +1,4 @@
-(function() {
+/*(function() {
     'use strict';
 	describe( 'campaign-service', function() {
 		beforeEach( module( 'ionic-polistics' ) );
@@ -9,4 +9,4 @@
 
 		
 	});
-})();
+})();*/

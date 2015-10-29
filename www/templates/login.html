@@ -14,12 +14,13 @@
 						highlight-color="balanced" 
 						type="email"
 						name="username"
-						ng-model = "loginController.username"
+						ng-model = "username"
 						ng-model-options="{debounce: 200}"
 						required
 					>
-						<div class="text-danger" ng-show="form.username.$error">This is not a valid email.</div>
+						
 					</ion-md-input>
+					<div class="text-danger" >This is not a valid email.</div>
 					<ion-md-input 
 						placeholder="Password" 
 						highlight-color="energized" 
@@ -35,12 +36,12 @@
 				<div ng-show="error" class="alert alert-danger">{{loginController.error}}</div>				
         </form>		
 <div>
-{{loginController.name}} {{loginController.username}} {{loginController.password}}
-</div>
+
         <div class="button-bar social-login">
             <button class="button button-small button-border icon-left ion-social-google button-assertive-900">Google+</button>
             <button class="button button-small button-border icon-left ion-social-twitter button-calm-900">Twitter</button>
             <button class="button button-small button-border icon-left ion-social-facebook button-positive-900">Facebook</button>
         </div>
+</div>		
     </ion-content>
 </ion-view>

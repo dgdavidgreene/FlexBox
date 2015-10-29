@@ -1,4 +1,4 @@
-(function () {
+/*(function () {
     'use strict';
     var serviceid = 'campaignService';
     angular.module('ionic-polistics')
@@ -28,4 +28,4 @@
 
 			
 		}]);
-})();
+})();*/

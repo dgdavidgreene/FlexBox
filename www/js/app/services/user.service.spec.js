@@ -1,4 +1,4 @@
-(function() {
+/*(function() {
     'use strict';
 	describe( 'User-service', function() {
 		beforeEach( module( 'ionic-polistics' ) );
@@ -11,4 +11,4 @@
             expect(UserService.initUser).toBeDefined();
         }));		
 	});
-})();
+})();*/
