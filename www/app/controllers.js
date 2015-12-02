@@ -9,6 +9,7 @@ angular.module('ionic-polistics')
 
     function initialize() {
 		AnimationService.headerAnimatedUpFromRight($scope);
+		
     }
 
 })

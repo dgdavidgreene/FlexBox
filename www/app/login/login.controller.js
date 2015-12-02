@@ -7,7 +7,8 @@ angular.module('ionic-polistics')
 
 	vm.signIn = function() {
 		/*UserService.signIn("dgdavidgreene@yahoo.com", "pa55w0rd");*/
-		console.log('Doing login', vm.username);
+		console.log('Doing login with ', vm.username + ' ' + vm.password);
+		
 	} 
 	
 	

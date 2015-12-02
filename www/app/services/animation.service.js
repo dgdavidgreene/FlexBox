@@ -9,11 +9,11 @@
 
 			    return {
 					defaultSettings: defaultSettings, //appCtrl
-					headerAnimatedSlideFromLeft: headerAnimatedSlideFromLeft, //gallery					
-					headerAnimatedUpFromLeft: headerAnimatedUpFromLeft, //activity, gallery	
-					headerAnimatedUpFromRight: headerAnimatedUpFromRight, //friends					
+					headerAnimatedSlideFromLeft: headerAnimatedSlideFromLeft, //gallery - list half					
+					headerAnimatedUpFromLeft: headerAnimatedUpFromLeft, //activity - item
+					headerAnimatedUpFromRight: headerAnimatedUpFromRight, //friends	- list				
 					headerNoneNoAnimation: headerNoneNoAnimation, //login
-					headerUpFromBottom: headerUpFromBottom, //profile
+					headerUpFromBottom: headerUpFromBottom, //profile - hero tabs list
 			    };
 
 			function defaultSettings(scope) {
@@ -99,7 +99,7 @@
 				};
 			}
 			
-			function headerAnimatedSlideFromLeft(scope) {
+			function headerAnimatedSlideFromLeft(scope) { // list half
 				scope.$parent.showHeader();
 				scope.$parent.clearFabs();
 				scope.isExpanded = true;
@@ -117,7 +117,7 @@
 				});				
 			}
 			
-			function headerAnimatedUpFromLeft (scope) {
+			function headerAnimatedUpFromLeft (scope) { // item
 				scope.$parent.showHeader();
 				scope.$parent.clearFabs();
 				scope.isExpanded = true;
@@ -134,33 +134,7 @@
 				ionicMaterialInk.displayEffect();		
 				
 			}
-			
-			function headerAnimatedUpFromRight(scope) {
-				
-				// Set Header
-				scope.$parent.showHeader();
-				
-				scope.$parent.clearFabs();
-				
-				scope.$parent.setHeaderFab('left');
 
-
-				// Delay expansion
-				$timeout(function() {
-					scope.isExpanded = true;
-					scope.$parent.setExpanded(true);
-				}, 300);
-				
-
-				// Set Motion
-				ionicMaterialMotion.fadeSlideInRight();
-
-				
-				// Set Ink
-				ionicMaterialInk.displayEffect();
-				
-
-			}
 			
 			function headerNoneNoAnimation(scope) {
 				
@@ -174,7 +148,7 @@
 					return true;
 			}
 			
-			function headerUpFromBottom(scope) {
+			function headerUpFromBottom(scope) { // hero tabs list
 				// Set Header
 				scope.$parent.showHeader();
 				scope.$parent.clearFabs();
@@ -199,8 +173,32 @@
 				// Set Ink
 				ionicMaterialInk.displayEffect();				
 			}
-			
-		
+						
+			function headerAnimatedUpFromRight(scope) { // list 
+				
+				// Set Header
+				scope.$parent.showHeader();
+				
+				scope.$parent.clearFabs();
+				
+				scope.$parent.setHeaderFab('left');
+
+
+				// Delay expansion
+				$timeout(function() {
+					scope.isExpanded = true;
+					scope.$parent.setExpanded(true);
+				}, 300);
+				
+
+				// Set Motion
+				ionicMaterialMotion.fadeSlideInRight();
+
+				
+				// Set Ink
+				ionicMaterialInk.displayEffect();
+
+			}		
 			
 		}]);
 })();

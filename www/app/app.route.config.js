@@ -20,7 +20,7 @@ angular.module('ionic-polistics')
 				url: '/app',
 				abstract: true,
 				templateUrl: 'templates/menu.html',
-				controller: 'AppCtrl as app'
+				controller: 'AppCtrl'
 			})
 
 			.state('app.activity', {
@@ -81,7 +81,7 @@ angular.module('ionic-polistics')
 				url: '/login',
 				views: {
 					'menuContent': {
-						templateUrl: 'templates/login.html',
+						templateUrl: 'app/login/login.html',
 						controller: 'LoginCtrl as loginController'
 					},
 					'fabContent': {

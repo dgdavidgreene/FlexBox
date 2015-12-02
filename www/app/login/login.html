@@ -1,0 +1,53 @@
+<ion-view view-title="Login" align-title="left">
+    <ion-content style="background: url(img/login.jpg) center; background-size: cover;">
+        <div class="hero no-header flat">
+            <div class="content">
+                <div class="app-icon"></div>
+                <h1>Polistics</h1>
+            </div>
+        </div>
+		<div>
+			<form novalidate="" class="form" name="authorizationForm" id="login-form" submit="signIn(authorizationForm)" >
+				<div class="padding">		
+					<div class="list">
+						<ion-md-input 
+							id="user-name"
+							placeholder="Email" 
+							highlight-color="balanced" 
+							name="username"
+							ng-model = "loginController.username"
+							
+							ng-minlength="6"
+							type="email"
+							required=""
+
+						>
+						</ion-md-input>
+						<ion-md-input 
+							id="password"
+							placeholder="Password" 
+							highlight-color="energized" 
+							type="password"
+							name="password"								
+							ng-model = "loginController.password"
+							ng-minlength="6"
+							required=""						
+						>
+						</ion-md-input>
+						<div class="padding">
+							<div class="form-group">
+								<button ng-disabled="authorizationForm.$invalid" ng-click="loginController.signIn()"  type="submit" class="button button-full button-assertive ink">Login</button>
+							</div>
+						</div>
+						<div class="button-bar social-login">
+							<button class="button button-small button-border icon-left ion-social-google button-assertive-900">Google+</button>
+							<button class="button button-small button-border icon-left ion-social-twitter button-calm-900">Twitter</button>
+							<button class="button button-small button-border icon-left ion-social-facebook button-positive-900">Facebook</button>
+						</div>		
+					</div>
+				</div>
+			</form>		
+		</div>
+	
+    </ion-content>
+</ion-view>
