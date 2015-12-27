@@ -23,10 +23,10 @@ angular.module('ionic-polistics')
 				},
 				{
 					animationClass: 'slide-up',
-					avatar: 'img/daenerys.jpg',
-					background: 'img/profile-bg.jpg',
 					link: 'app.profile',
-					title: 'Profile'
+					title: 'Profile',
+					avatar: 'img/daenerys.jpg',
+					background: 'img/profile-bg.jpg'					
 				},
 				{
 					animationClass: 'animate-fade-slide-in-right',						

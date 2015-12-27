@@ -16,7 +16,7 @@ angular.module('ionic-polistics', [
 	,'ngResource'
 	,'LocalStorageModule'
 	,'ngMessages'
-	//,'backand'
+	,'backand'//
 	])
 ; 
 

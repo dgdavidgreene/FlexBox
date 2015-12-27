@@ -1,4 +1,4 @@
-/*(function () {
+(function () {
     'use strict';
     var serviceid = 'UserService';
     angular.module('ionic-polistics')
@@ -23,7 +23,7 @@
 				function readAll() {
 					return $http({
 						method: 'GET',
-						url: '' // Backand.getApiUrl() + ApplicationValues.baseUrl + self.name
+						url: Backand.getApiUrl() + ApplicationValues.baseUrl + self.name
 					}).then(function(response) {
 						return response.data.data;
 					});
@@ -31,20 +31,20 @@
 
 				function signIn(username, password) {
 					//set the your app name
-					//Backand.setAppName(ApplicationValues.appName);
+					Backand.setAppName(ApplicationValues.appName);
 
 					//sign in to Backand
-					/*Backand.signin(username, password)
+					Backand.signin(username, password)
 						.then(
-						function () {
-							$location.path('/');
+						function success() {
+							$location.path('/app/activity');
 						},
-						function (data) {
+						function failure(data) {
 							console.log(data);
 							self.error = data && data.error_description || 'Unknown error from server';
 						}
-					);*//*
+					);
 				}
 			
 		}]);
-})();*/
+})();/**/

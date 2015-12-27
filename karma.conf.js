@@ -27,7 +27,7 @@ module.exports = function(config) {
 		'www/lib/ionic/js/angular/angular-resource.js',
 		'www/lib/ionic/js/angular/angular-local-storage.js',
 		'www/lib/angular/angular-messages.js',
-		//'www/lib/backand/backand.1.8.0.min.js',
+		'www/lib/backand/backand.1.8.0.min.js',
 		'www/app/app.js',
 		
 		'www/app/**/*.js'
