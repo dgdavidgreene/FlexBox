@@ -20,7 +20,7 @@ angular.module('ionic-polistics')
 				url: '/app',
 				abstract: true,
 				templateUrl: 'templates/menu.html',
-				controller: 'AppCtrl'
+				controller: 'AppCtrl as appController'
 			})
 
 			.state('app.activity', {
@@ -28,7 +28,7 @@ angular.module('ionic-polistics')
 				views: {
 					'menuContent': {
 						templateUrl: 'templates/activity.html',
-						controller: 'ActivityCtrl'
+						controller: 'ActivityCtrl as activityController'
 					},
 					'fabContent': {
 						template: '<button id="fab-activity" class="button button-fab button-fab-top-right expanded button-energized-900 flap"><i class="icon ion-paper-airplane"></i></button>',
@@ -46,7 +46,7 @@ angular.module('ionic-polistics')
 				views: {
 					'menuContent': {
 						templateUrl: 'templates/friends.html',
-						controller: 'FriendsCtrl'
+						controller: 'FriendsCtrl as friendsController'
 					},
 					'fabContent': {
 						template: '<button id="fab-friends" class="button button-fab button-fab-top-left expanded button-energized-900 spin"><i class="icon ion-chatbubbles"></i></button>',
@@ -64,7 +64,7 @@ angular.module('ionic-polistics')
 				views: {
 					'menuContent': {
 						templateUrl: 'templates/gallery.html',
-						controller: 'GalleryCtrl'
+						controller: 'GalleryCtrl as galleryController'
 					},
 					'fabContent': {
 						template: '<button id="fab-gallery" class="button button-fab button-fab-top-right expanded button-energized-900 drop"><i class="icon ion-heart"></i></button>',
@@ -95,7 +95,7 @@ angular.module('ionic-polistics')
 				views: {
 					'menuContent': {
 						templateUrl: 'templates/profile.html',
-						controller: 'ProfileCtrl'
+						controller: 'ProfileCtrl as profileController'
 					},
 					'fabContent': {
 						template: '<button id="fab-profile" class="button button-fab button-fab-bottom-right button-energized-900"><i class="icon ion-plus"></i></button>',
