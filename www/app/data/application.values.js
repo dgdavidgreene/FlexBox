@@ -41,7 +41,11 @@ angular.module('ionic-polistics')
 			],
 			menuContentExpanded: true,				
 			title: 'Polistics',
-			
+			user: {
+				isLoggedIn: false,
+				name: ''
+				
+			}
 		}		
 	});
 
