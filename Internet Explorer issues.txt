@@ -1,0 +1,10 @@
+
+
+
+Note that Internet Explorer 11 does not support feature queries yet does support flexbox. If you decide the IE11 implementation is too buggy and you wish to serve it the fallback layout then you could use feature queries to serve flexbox rules only to those browsers with good flexbox support. Remember that if you want to include versions of browsers that had vendor-prefixed flexbox you would need to include the prefixed version in your feature query. 
+
+
+https://github.com/philipwalton/flexbugs
+
+
+
