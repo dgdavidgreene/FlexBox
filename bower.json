@@ -1,9 +1,0 @@
-{
-  "name": "ionic-polistics",
-  "private": "true",
-  "devDependencies": {
-    "ionic": "driftyco/ionic-bower#1.1.0",
-    "ionic-material": "0.4.2",
-    "ion-md-input": "0.0.2"
-  }
-}
